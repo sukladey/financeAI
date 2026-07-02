@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: order-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: #f4f6f9;
+}
+
+.container{
+  width:90%;
+  margin: auto;
+}
+
+.card{
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.btn{
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary{
+  background: #2563eb;
+  color: white;
+}
+
+.btn-danger{
+  background: crimson;
+  color: white;
+}
+
+input,
+select,
+textarea{
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-cards {
+    flex-direction: column;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
